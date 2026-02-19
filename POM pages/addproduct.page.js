@@ -8,7 +8,8 @@ class addproduct{
         this.disableSM=page.locator('//input[@value="2"]')
         this.DescriptionTAF=page.locator('//textarea[@name="txtProductDescription"]')
         this.AddproductButton=page.locator('//input[@value="Add Product"]')
-        this.productslink=page.getByRole('link',{name:'Products'})
+        this.productslink=page.getByRole('link',{name:'Products',exact:true})
+        this.managestocklink=page.getByRole('link',{name:'Manage Stock',exact:true})
     }
 
     async selectUnitType(value){
