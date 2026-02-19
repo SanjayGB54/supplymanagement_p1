@@ -6,6 +6,7 @@ class home{
         this.AddDistributor=page.getByRole('link',{name:"Add Distributor"})
         this.Logout=page.locator('.submit_button')
         this.ManageArealink=page.getByRole('link',{name:"Manage Area"})
+        this.ChangePasswordlink=page.getByRole('link',{name:"Change Password",exact:true})
     }
 }
 export default home
